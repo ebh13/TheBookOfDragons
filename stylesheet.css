@@ -1,0 +1,246 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles */
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    background-color: #ecd58a;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+body::before {
+    content: "";
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.45; 
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+/* Layout styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styles */
+h1 {
+    font-family: 'Cinzel Decorative', cursive; 
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(236, 213, 138, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header::before {
+    content: "";
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header a {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+    display: inline-block;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive; 
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+header h3 {
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive; 
+    text-align: center;
+    color: black;
+}
+
+header a:hover {
+    text-decoration: underline black;
+}
+
+header .search-bar {
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: #ecd58a;
+    border: 1px solid #94191900;
+    border-radius: 0px;
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main content styles */
+main {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.clickable-image {
+    width: 125px;
+    height: auto;
+    display: sideblock;
+    margin: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.clickable-image {
+    width: 125px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.2);
+}
+
+.audio-icon {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    margin-top: 0px;
+}
+
+.audio-icon:hover {
+    transform: scale(1.3);
+}
+
+iframe {
+    display: block;
+    margin: 20px auto; 
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.8); 
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 15px;
+    color: #333;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 35px;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+a:hover, button:hover {
+    cursor: url('cursor.png'), auto;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.figcaption {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+}
